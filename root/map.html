@@ -1,14 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>dashboard</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<head>
+    <title>What's the Move?</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    <body>
-    </body>
+<body>
+
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class="bx bxs-comment-dots"></i>
+                <span>wtm?</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="user">
+            <img src="images/dingle.jpg" alt="pic of randy" class="user-img">
+            <div>
+                <p class="bold">Randy L.</p>
+                <p>Admin</p>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="dashboard.html">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">dashboard</span>
+                </a>
+                <span class="tooltip">dashboard</span>
+            </li>
+            <li>
+                <a href="moves.html">
+                    <i class="bx bxs-map-pin"></i>
+                    <span class="nav-item">moves</span>
+                </a>
+                <span class="tooltip">moves</span>
+            </li>
+            <li>
+                <a href="friends.html">
+                    <i class="bx bx-body"></i>
+                    <span class="nav-item">friends</span>
+                </a>
+                <span class="tooltip">friends</span>
+            </li>
+            <li>
+                <a href="map.html">
+                    <i class="bx bxs-map-alt"></i>
+                    <span class="nav-item">map</span>
+                </a>
+                <span class="tooltip">map</span>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <i class="bx bxs-cog"></i>
+                    <span class="nav-item">settings</span>
+                </a>
+                <span class="tooltip">settings</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>wtm?</h1>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    let btn = docment.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    };
+</script>
 </html>
